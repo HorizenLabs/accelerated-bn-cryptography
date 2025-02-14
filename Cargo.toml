@@ -2,12 +2,11 @@
 members = [
   "curves/bn254",
   "models",
-  "test-utils",
 ]
 resolver = "2"
 
 [workspace.package]
-version = "0.5.0"
+version = "0.6.0"
 authors = ["Horizen Labs <admin@horizenlabs.io>"]
 repository = "https://github.com/zkVerify/accelerated-bn-cryptography"
 homepage = "https://horizenlabs.io"
@@ -22,10 +21,9 @@ ark-algebra-test-templates = { version = "0.5.0", default-features = false }
 ark-bn254 = { version = "0.5.0", default-features = false, features = ["curve"] }
 ark-ec = { version = "0.5.0", default-features = false }
 ark-ff = { version = "0.5.0", default-features = false }
-ark-models-ext = { path = "./models", version = "0.5.0", default-features = false }
-ark-serialize = { version = "0.5.0", default-features = false, features = ["derive"] }
+ark-models-ext = { path = "./models", version = "0.6.0", default-features = false }
 ark-scale = { version = "0.0.13", default-features = false, features = ["hazmat"] }
+ark-serialize = { version = "0.5.0", default-features = false, features = ["derive"] }
 ark-std = { version = "0.5.0", default-features = false }
 educe = { version = "0.6.0", default-features = false }
 num-traits = { version = "0.2", default-features = false }
-test-utils = { path = "./test-utils", default-features = false }
